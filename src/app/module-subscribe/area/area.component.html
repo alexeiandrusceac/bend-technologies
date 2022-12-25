@@ -1,0 +1,8 @@
+<div class="container">
+  <h2> {{ areaModel.name }}</h2>
+  <div class="row">
+    <div *ngFor="let thing of areaModel.things |generateChild ">
+      <app-thing [thingModel]="thing"></app-thing>
+    </div>
+  </div>
+</div>

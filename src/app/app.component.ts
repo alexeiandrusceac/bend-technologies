@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {RestApiService} from './services/rest-api.service'
 import {response} from 'express'
+import {Router} from '@angular/router'
 
 @Component({
   selector: 'app-root',
@@ -10,13 +11,12 @@ import {response} from 'express'
 export class AppComponent implements OnInit {
   title = 'bend-technologies';
 
-  constructor(private restAPIService: RestApiService){
-
+  constructor(private router: Router){
+  }
+  ngOnInit() {
   }
 
-  ngOnInit() {
-    this.restAPIService.getThings().subscribe((response: any)=>{
-      console.log(response);
-    });
+  send() {
+    this.router.navigate(['/module-subscribe'])
   }
 }
