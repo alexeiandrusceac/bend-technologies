@@ -1,1 +1,94 @@
 /* You can add global styles to this file, and also import other style files */
+$yellow: #f4e700;
+$orangered: #f64d25;
+$orange: #ff9800;
+$joiner: #203d74;
+
+body {
+  background-color: #19263b;
+  color: white;
+  font-family: 'Roboto Thin', sans-serif ;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .card {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    background-color: #2b4e87;
+    border-radius: 10px;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin: 12px 0;
+    justify-content:center;
+    align-content: center;
+    z-index:2;
+
+
+    span {
+      position: absolute;
+      top: 10px;
+      right: 18px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+  }
+  .parent{
+    margin-left:10px;
+  }
+  .orange:after {
+    content: '';
+    border-left: 6px solid #f64d25;
+    top:15%;
+    height:75%;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    position:absolute;
+    left:0;
+
+  }
+  .yellow:after {
+    content: '';
+    border-left: 6px solid #f4e700;
+    top:15%;
+    height:75%;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    position:absolute;
+    left:0;
+  }
+
+  .separator {
+    position:relative;
+    background-color: #203d74;
+    width: 10px;
+    height: 75px;
+    display: flex;
+    flex-direction:column;
+    margin: 0;
+    z-index:1;
+  }
+
+}
+
+
