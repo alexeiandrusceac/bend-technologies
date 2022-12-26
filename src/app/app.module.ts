@@ -5,16 +5,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {HttpClientModule} from '@angular/common/http'
 import {ModuleSubscribeModule} from './module-subscribe/module-subscribe.module'
+import {ModuleAsyncPipeModule} from './module-async-pipe/module-async-pipe.module'
+import {GenerateChildPipe} from './generated-child.pipe'
+import {SharedModule} from './shared/shared.module'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ModuleSubscribeModule
+    SharedModule,
+    ModuleSubscribeModule,
+    ModuleAsyncPipeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

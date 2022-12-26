@@ -1,6 +1,8 @@
 import {ChangeDetectionStrategy, ChangeDetectorRef, Component, Input, OnInit} from '@angular/core';
-import {Area} from '../../interfaces/area'
-import {RestApiService} from '../../services/rest-api.service'
+import {Area} from '../../../interfaces/area'
+import {RestApiService} from '../../../services/rest-api.service'
+import {concatMap, filter, groupBy, map, mergeMap, of, toArray, zip} from 'rxjs'
+import {group} from '@angular/animations'
 
 @Component({
   selector: 'app-area',
@@ -15,10 +17,9 @@ export class AreaComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.restAPIService.getThings(this.areaModel.areaId).subscribe((response: any) => {
-      console.log(response);
-      this.areaModel.things = response;
-      this.changeDetectorRef.markForCheck();
-    })
+    this.areaModel.thingsOb = this.restAPIService.getThings(this.areaModel.areaId)
+    this.changeDetectorRef.markForCheck();
   }
+
 }
+
