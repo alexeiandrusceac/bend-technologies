@@ -1,6 +1,6 @@
 import {ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit} from '@angular/core';
-import {RestApiService} from '../../services/rest-api.service'
-import {Area} from '../../interfaces/area'
+import {RestApiService} from '../../../services/rest-api.service'
+import {Area} from '../../../interfaces/area'
 
 @Component({
   selector: 'app-areas',

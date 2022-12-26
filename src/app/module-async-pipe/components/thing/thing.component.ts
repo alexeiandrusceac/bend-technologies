@@ -1,5 +1,5 @@
 import {ChangeDetectionStrategy, ChangeDetectorRef, Component, Input, OnInit} from '@angular/core';
-import {Thing} from '../../interfaces/thing'
+import {Thing} from '../../../interfaces/thing'
 
 @Component({
   selector: 'app-thing',
