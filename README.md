@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## GIT
 
-## !!!!! Some changes are done so use `git pull develop` to get them !!!
+## !!!!! Some changes (removed node_modules on back-end and front-end, added new component, added some rules and some fixes) are done so use `git pull develop` to get them !!!
 
 ## BACKEND packages used
 
@@ -74,3 +74,26 @@ $ npm install
 ```sh
 $ npm run start
 ```
+
+## ESLINT, PRETTIER, STYLELINT
+1. To run Eslint run this command
+```sh
+$ npm run lint
+```
+2. To run Prettier run this command
+```sh
+$ npm run prettier
+```
+3. To run Stylelint run this command
+```sh
+$ npm run lint:scss
+```
+
+## HOW TO USE APP
+After running  front-end you will be on home component page 
+where you can see a message on center and navigation on top of the page:
+ 
+On navigation bar you can see 2 routes: 
+
+1. Module subscribe - redirects to module where is used subscribe 
+2. Module Async - redirects to module where is used async pipe
