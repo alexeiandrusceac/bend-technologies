@@ -1,6 +1,10 @@
 {
   "extends": "stylelint-config-recommended",
   "rules": {
-    // Add any custom rules here
-  }
+    "color-hex-case": "lower",
+    "color-hex-length": "short",
+    "no-empty-source": null,
+    "indentation": 2
+  },
+  "customSyntax": "postcss-scss"
 }
