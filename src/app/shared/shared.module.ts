@@ -1,16 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {GenerateChildPipe} from '../generated-child.pipe'
+import { GenerateGroupsPipe } from '../generated-groups.pipe';
 
 @NgModule({
-  imports: [
-    CommonModule
-  ],
-  declarations: [
-    GenerateChildPipe
-  ],
-  exports: [
-    GenerateChildPipe
-  ]
+  imports: [CommonModule],
+  declarations: [GenerateGroupsPipe],
+  exports: [GenerateGroupsPipe],
+  providers: [GenerateGroupsPipe],
 })
-export class SharedModule { }
+export class SharedModule {}

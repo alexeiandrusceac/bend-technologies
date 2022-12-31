@@ -4,10 +4,21 @@ $orangered: #f64d25;
 $orange: #ff9800;
 $joiner: #203d74;
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   background-color: #19263b;
   color: white;
-  font-family: 'Roboto Thin', sans-serif ;
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+.header-title {
+  padding: 10px;
+  text-align: center;
 }
 
 .container {
@@ -38,10 +49,9 @@ body {
     flex-direction: row;
     box-sizing: border-box;
     margin: 12px 0;
-    justify-content:center;
+    justify-content: center;
     align-content: center;
-    z-index:2;
-
+    z-index: 2;
 
     span {
       position: absolute;
@@ -53,42 +63,41 @@ body {
       text-align: center;
     }
   }
-  .parent{
-    margin-left:10px;
+
+  .parent {
+    margin-left: 10px;
   }
+
   .orange:after {
     content: '';
     border-left: 6px solid #f64d25;
-    top:15%;
-    height:75%;
+    top: 15%;
+    height: 75%;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
-    position:absolute;
-    left:0;
-
+    position: absolute;
+    left: 0;
   }
+
   .yellow:after {
     content: '';
     border-left: 6px solid #f4e700;
-    top:15%;
-    height:75%;
+    top: 15%;
+    height: 75%;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
-    position:absolute;
-    left:0;
+    position: absolute;
+    left: 0;
   }
 
   .separator {
-    position:relative;
+    position: relative;
     background-color: #203d74;
     width: 10px;
     height: 75px;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     margin: 0;
-    z-index:1;
+    z-index: 1;
   }
-
 }
-
-
